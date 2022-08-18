@@ -1,0 +1,93 @@
+footer {
+    background: var(--dark-light);
+  }
+  footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+  }
+  footer .logo,
+  footer .links,
+  footer p {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    width: 100%;
+  }
+  
+  footer .logo {
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--red-text);
+    font-weight: 900;
+  }
+  footer .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer a,
+  footer p {
+    margin: 0px 15px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  footer a:hover {
+    color: var(--red-text);
+  }
+  footer p {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  footer p i {
+    margin-right: 15px;
+    color: var(--red-text);
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+
+@media (max-width: 660px) {
+    .banner .banner-content h2 {
+      font-size: 30px;
+      line-height: 30px;
+    }
+    .services-experience::before {
+      width: 0;
+    }
+    .services .service {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .experience,
+    .portfolios {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 50px;
+    }
+    .projects-wrapper .project {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    footer .container {
+      flex-wrap: wrap;
+      height: auto;
+      padding: 20px;
+    }
+    footer .logo,
+    footer .links,
+    footer p {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 10px;
+      justify-content: center;
+      text-align: center;
+    }
+    footer p {
+      margin-bottom: 0px;
+    }
+  }
